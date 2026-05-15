@@ -1,3 +1,9 @@
+<p align="center">
+  <img src="icon.jpeg" alt="Preview">
+</p>
+
+Godot 4.2+
+godot enhanced_input like UE5 
 
 ## Documentation
 
@@ -6,19 +12,23 @@
 1. Load `main.gd` into the scene using Globals (AutoLoad) or `add_child()`.
 
 2. Bind / unbind actions.
-   `bind_true` = action pressed
+   `bind_true` = action pressed  
    `bind_false` = action released, canceled, etc.
 
-   # InputMap
-   main.key.bind_true("action_name", my_function)
-   main.key.unbind_true("action_name", my_function)
+   - InputMap
 
-   # Mouse motion, my_function(Vector2)
-   main.motion.bind("action_name", my_function)
-   main.motion.unbind("action_name", my_function)
+     `main.key.bind_true("action_name", my_function)`
+     
+     `main.key.unbind_true("action_name", my_function)`
+
+   - Mouse motion, my_function(Vector2)
+
+     `main.motion.bind("action_name", my_function)`
+     
+     `main.motion.unbind("action_name", my_function)`
 
 3. If the InputMap is modified during gameplay, call:
-   main.filter_gd.reload()
+   `main.filter_gd.reload()`
 
    
 ## How the plugin works
