@@ -10,11 +10,11 @@ Godot 4.2+
    `bind_true` = action pressed
    `bind_false` = action released, canceled, etc.
 
-   # InputMap
+   #InputMap
    main.key.bind_true("action_name", my_function)
    main.key.unbind_true("action_name", my_function)
 
-   # Mouse motion, my_function(Vector2)
+   #Mouse motion, my_function(Vector2)
    main.motion.bind("action_name", my_function)
    main.motion.unbind("action_name", my_function)
 
